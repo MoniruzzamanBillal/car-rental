@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+
+    <!-- ! tailwind css file  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ! main css file  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="signUpContainer bg-[#000000] h-screen flex items-center">
+      <div class="signUpWrapper w-[90%] m-auto flex justify-between gap-x-10">
+        <!-- ! sign up left section starts  -->
+
+        <div
+          class="signUpLeft bgGradientColor w-[50%] py-4 text-white rounded-xl flex justify-center items-center flex-col"
+        >
+          <!-- header  -->
+          <h1 class="headerCss text-2xl mb-4">Car rental</h1>
+
+          <h1 class="text-4xl headerCss">Get started with us</h1>
+        </div>
+
+        <!-- ! sign up left section ends -->
+        <!--  -->
+
+        <!-- ! sign up right section starts  -->
+        <div class="signUpRight w-[50%] text-white p-2 flex flex-col gap-y-8">
+          <!-- header  -->
+          <h1 class="headerCss text-4xl text-center mb-9">Sign up account</h1>
+
+          <!-- name input starts  -->
+          <div class="nameInput flex justify-between items-center gap-x-4">
+            <!-- ! first name  -->
+            <div class="firstName flex flex-col gap-y-1 w-[50%]">
+              <label for="firstName" class="font-semibold">First name </label>
+              <input
+                id="firstName"
+                class="firstName inputCss"
+                type="text"
+                placeholder="Enter your first name"
+              />
+            </div>
+
+            <!-- ! last name  -->
+
+            <div class="lastName flex flex-col gap-y-1 w-[50%]">
+              <label for="lastName" class="font-semibold">Last name </label>
+              <input
+                id="lastName"
+                class="lastName inputCss"
+                type="text"
+                placeholder="Enter your last name"
+              />
+            </div>
+
+            <!--  -->
+          </div>
+          <!-- name input ends -->
+
+          <!-- email input starts  -->
+          <div class="emailInput flex flex-col gap-y-1">
+            <label for="email" class="font-semibold">Email </label>
+            <input
+              id="email"
+              class="email inputCss"
+              type="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <!-- email input ends -->
+
+          <!-- password input starts  -->
+          <div class="passwordInput flex flex-col gap-y-1">
+            <label for="password" class="font-semibold">Password </label>
+            <input
+              id="password"
+              class="password inputCss"
+              type="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <!-- password input ends -->
+
+          <div class="signUpBTN">
+            <button class="bg-gray-50 text-gray-800 text-lg buttonCss">
+              Sign up
+            </button>
+          </div>
+
+          <!--  -->
+        </div>
+        <!-- ! sign up right section ends -->
+      </div>
+    </div>
+  </body>
+</html>
