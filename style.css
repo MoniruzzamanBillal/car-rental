@@ -21,6 +21,12 @@
   background-repeat: no-repeat;
 }
 
+.bgImage {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* ! header style  */
 .headerCss {
   font-weight: 600;

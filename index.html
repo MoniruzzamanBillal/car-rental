@@ -14,8 +14,8 @@
     <div class="mainContainer">
       <div class="mainWrapper">
         <!-- ! nav starts  -->
-        <div class="navContainer w-[90%] m-auto">
-          <div class="navWrapper flex justify-between py-2 px-3 bg-gray-100">
+        <div class="navContainer bg-gray-100">
+          <div class="navWrapper w-[90%] m-auto flex justify-between py-2 px-3">
             <!--! nav left starts  -->
             <div class="navLeft flex justify-center items-center gap-x-8">
               <!-- logo starts  -->
@@ -95,12 +95,60 @@
         <!-- ! nav ends  -->
 
         <!-- ! body container starts  -->
-        <div class="bodyContainer py-4 min-h-screen">
-          <h1>main body</h1>
-          <h1>main body</h1>
-          <h1>main body</h1>
-          <h1>main body</h1>
+        <div class="bodyContainer min-h-screen">
+          <!-- * hero section starts  -->
+          <div
+            class="heroSection relative bgImage h-[24rem]"
+            style="background-image: url(./images/bannerBg.png)"
+          >
+            <!-- bg dark shade  -->
+            <div
+              class="bg-gray-700 inset-0 w-full h-full opacity-70 absolute top-0 left-0 z-[5]"
+            ></div>
+
+            <div
+              class="heroWrapper absolute inset-0 z-[10] w-[85%] h-full m-auto flex flex-col justify-center"
+            >
+              <!-- heading  -->
+              <h1 class="text-5xl font-semibold text-gray-50">Car rental</h1>
+
+              <!-- * features section starts  -->
+              <div
+                class="bannerFeatures  mt-9 text-xl text-gray-50 flex flex-col gap-y-6"
+              >
+                <!-- feature 1 -->
+                <div class="feature1 flex items-center gap-x-4">
+                  <div class="icon size-[1.2rem]">
+                    <img src="./images/tick.png" class="w-full h-full" alt="" />
+                  </div>
+
+                  <h1>Easy & Fast </h1>
+                </div>
+                <!-- feature 2 -->
+                <div class="feature2 flex items-center gap-x-4">
+                  <div class="icon size-[1.2rem]">
+                    <img src="./images/tick.png" class="w-full h-full" alt="" />
+                  </div>
+
+                  <h1>Best Price with Quality Service</h1>
+                </div>
+                <!-- feature 3 -->
+                <div class="feature3 flex items-center gap-x-4">
+                  <div class="icon size-[1.2rem]">
+                    <img src="./images/tick.png" class="w-full h-full" alt="" />
+                  </div>
+
+                  <h1>Choose from a Wide Variety of Cars</h1>
+                </div>
+              <!-- * features section ends  -->
+            </div>
+          </div>
+          <!-- * hero section ends -->
         </div>
+        <!-- * hero section ends  -->
+
+        
+
         <!-- ! body container ends  -->
 
         <!-- ! footer starts  -->
