@@ -146,7 +146,7 @@
 
         <!-- ! body container starts  -->
         <div class="bodyContainer min-h-screen">
-          <!-- * hero section starts  -->
+          <!-- ! hero section starts  -->
           <section
             class="heroSection relative bgImage h-[31rem] lg:h-[24rem]"
             style="background-image: url(./images/bannerBg.png)"
@@ -328,24 +328,32 @@
             </div>
             <!-- * hero section ends -->
           </section>
-          <!-- * hero section ends  -->
+          <!-- ! hero section ends  -->
 
-          <!-- * why choose us section starts  -->
-          <div class="whyChooseUsContainer py-12">
-            <div class="whyChooseUsWrapper w-[85%] m-auto">
-              <h1 class="font-medium pb-4 text-gray-700">WHY CHOOSE US?</h1>
+          <!-- ! why choose us section starts  -->
+          <section class="whyChooseUsContainer py-12">
+            <div
+              class="whyChooseUsWrapper w-[92%] sm:w-[90%] md:w-[85%] m-auto"
+            >
+              <h1
+                class="font-medium pb-2.5 md:pb-4 text-gray-700 text-sm md:text-base"
+              >
+                WHY CHOOSE US?
+              </h1>
 
-              <h1 class="font-semibold text-3xl">
+              <h1 class="font-semibold text-2xl md:text-3xl">
                 Best Price. Quality Service.
               </h1>
 
-              <div class="serviceCards mt-16 grid grid-cols-3 gap-x-10">
+              <div
+                class="serviceCards mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 lg:gap-x-10 gap-y-16"
+              >
                 <!-- * service 1  -->
                 <!-- service card starts  -->
-                <div class="serviceCard flex gap-x-3">
+                <div class="serviceCard flex gap-x-2 md:gap-x-3">
                   <!-- left section  -->
                   <div class="serviceCardLeft">
-                    <div class="icon size-[2.2rem]">
+                    <div class="icon size-[2rem] lg:size-[2.2rem]">
                       <img
                         src="./images/icon/schedule.png"
                         class="w-full h-full"
@@ -356,20 +364,24 @@
                   <!-- right section  -->
                   <div class="serviceCardRight">
                     <!-- service heading  -->
-                    <h1 class="text-xl font-semibold mb-1">Schedule Booking</h1>
-                    <h1 class="">
-                      Pick your travel date in advance, as per your schedule.
+                    <h1
+                      class="text-base sm:text-lg md:text-xl font-semibold mb-1"
+                    >
+                      Schedule Booking
                     </h1>
+                    <p class="">
+                      Pick your travel date in advance, as per your schedule.
+                    </p>
                   </div>
                 </div>
                 <!-- service card ends  -->
 
                 <!-- * service 2  -->
                 <!-- service card starts  -->
-                <div class="serviceCard flex gap-x-3">
+                <div class="serviceCard flex gap-x-2 md:gap-x-3">
                   <!-- left section  -->
                   <div class="serviceCardLeft">
-                    <div class="icon size-[2.2rem]">
+                    <div class="icon size-[2rem] lg:size-[2.2rem]">
                       <img
                         src="./images/icon/customerSuport.png"
                         class="w-full h-full"
@@ -390,10 +402,10 @@
 
                 <!-- * service 3  -->
                 <!-- service card starts  -->
-                <div class="serviceCard flex gap-x-3">
+                <div class="serviceCard flex gap-x-2 md:gap-x-3">
                   <!-- left section  -->
                   <div class="serviceCardLeft">
-                    <div class="icon size-[2.2rem]">
+                    <div class="icon size-[2rem] lg:size-[2.2rem]">
                       <img
                         src="./images/icon/like.png"
                         class="w-full h-full"
@@ -417,52 +429,64 @@
                 <!--  -->
               </div>
             </div>
-          </div>
-          <!-- * why choose us section ends  -->
+          </section>
+          <!-- ! why choose us section ends  -->
 
-          <!-- * how it works section starts  -->
-          <div class="howItWorksContainer py-12 bg-gray-100">
-            <div class="howItWorksWrapper w-[85%] m-auto">
-              <h1 class="font-medium pb-3.5 text-gray-700">HOW IT WORKS</h1>
+          <!-- ! how it works section starts  -->
+          <section class="howItWorksContainer py-12 bg-gray-100">
+            <div class="howItWorksWrapper w-[94%] md:w-[90%] lg:w-[85%] m-auto">
+              <h1
+                class="font-medium pb-2.5 md:pb-4 text-gray-700 text-sm md:text-base"
+              >
+                HOW IT WORKS
+              </h1>
 
-              <h1 class="font-semibold text-3xl">Easiest way to rent a car</h1>
+              <h1 class="font-semibold text-2xl md:text-3xl">
+                Easiest way to rent a car
+              </h1>
 
               <div
-                class="contentSection mt-14 flex gap-x-14 items-center justify-between"
+                class="contentSection mt-8 sm:mt-10 md:mt-14 flex flex-col md:flex-row gap-y-6 md:gap-y-0 gap-x-0 md:gap-x-5 lg:gap-x-8 items-center justify-between"
               >
                 <!-- * content left starts -->
-                <div
-                  class="contentLeft bg-violet-400 w-[46%] h-[20rem] bgImage rounded-lg overflow-auto"
+                <section
+                  class="contentLeft w-[88%] sm:w-[80%] md:w-[48%] h-[18rem] md:h-[22rem] lg:h-[20rem] bgImage rounded-lg overflow-auto"
                 >
                   <img
                     src="./images/howWorks.jpg"
                     class="w-full h-full"
                     alt=""
                   />
-                </div>
+                </section>
                 <!-- * content left ends-->
 
                 <!-- * content right starts -->
-                <div class="contentRight w-[54%] flex flex-col gap-y-14">
+                <section
+                  class="contentRight w-[88%] sm:w-[80%] md:w-[52%] flex flex-col gap-y-8 sm:gap-y-10 md:gap-y-14"
+                >
                   <!-- * content 1  -->
                   <!-- content card starts  -->
                   <div class="contentCard flex gap-x-3.5">
                     <!-- left section  -->
                     <div
-                      class="contentCardLeft w-[8%] bg-sky-300 flex justify-center items-center rounded-full"
+                      class="contentCardLeft size-[2.5rem] sm:size-[3rem] md:size-[3.2rem] bg-sky-300 flex justify-center items-center rounded-full"
                     >
-                      <h1 class="font-semibold text-xl">1</h1>
+                      <h1 class="font-semibold text-base sm:text-lg lg:text-xl">
+                        1
+                      </h1>
                     </div>
                     <!-- right section  -->
-                    <div class="contentCardRight w-[92%]">
+                    <div class="contentCardRight">
                       <!-- service heading  -->
-                      <h1 class="text-xl font-semibold mb-1.5">
+                      <h1
+                        class="font-bold sm:font-semibold mb-1.5 text-base sm:text-lg lg:text-xl"
+                      >
                         Choose Location
                       </h1>
-                      <h1 class="">
+                      <p class="text-sm sm:text-base">
                         Tell us whether your destination is Inside City or
                         Outside City.
-                      </h1>
+                      </p>
                     </div>
                   </div>
                   <!-- content card ends  -->
@@ -472,20 +496,24 @@
                   <div class="contentCard flex gap-x-3.5">
                     <!-- left section  -->
                     <div
-                      class="contentCardLeft w-[8%] bg-sky-300 flex justify-center items-center rounded-full"
+                      class="contentCardLeft size-[2.5rem] sm:size-[3rem] md:size-[3.2rem] bg-sky-300 flex justify-center items-center rounded-full"
                     >
-                      <h1 class="font-semibold text-xl">2</h1>
+                      <h1 class="font-semibold text-base sm:text-lg lg:text-xl">
+                        2
+                      </h1>
                     </div>
                     <!-- right section  -->
-                    <div class="contentCardRight w-[92%]">
+                    <div class="contentCardRight">
                       <!-- service heading  -->
-                      <h1 class="text-xl font-semibold mb-1.5">
+                      <h1
+                        class="font-bold sm:font-semibold mb-1.5 text-base sm:text-lg lg:text-xl"
+                      >
                         Pick your Preferred Car
                       </h1>
-                      <h1 class="">
+                      <p class="text-sm sm:text-base">
                         Tell us the type of car you are looking for (SUV, Sedan
                         or Microbus).
-                      </h1>
+                      </p>
                     </div>
                   </div>
                   <!-- content card ends  -->
@@ -495,39 +523,49 @@
                   <div class="contentCard flex gap-x-3.5">
                     <!-- left section  -->
                     <div
-                      class="contentCardLeft w-[8%] bg-sky-300 flex justify-center items-center rounded-full"
+                      class="contentCardLeft size-[2.5rem] sm:size-[3rem] md:size-[3.2rem] bg-sky-300 flex justify-center items-center rounded-full"
                     >
-                      <h1 class="font-semibold text-xl">3</h1>
+                      <h1 class="font-semibold text-base sm:text-lg lg:text-xl">
+                        3
+                      </h1>
                     </div>
                     <!-- right section  -->
-                    <div class="contentCardRight w-[92%]">
+                    <div class="contentCardRight">
                       <!-- service heading  -->
-                      <h1 class="text-xl font-semibold mb-1.5">
+                      <h1
+                        class="font-bold sm:font-semibold mb-1.5 text-base sm:text-lg lg:text-xl"
+                      >
                         Book Schedule
                       </h1>
-                      <h1 class="">
+                      <p class="text-sm sm:text-base">
                         Tell us when and where you want the car to be.
-                      </h1>
+                      </p>
                     </div>
                   </div>
                   <!-- content card ends  -->
 
                   <!--  -->
-                </div>
+                </section>
                 <!-- * content right ends-->
 
                 <!--  -->
               </div>
               <!--  -->
             </div>
-          </div>
-          <!-- * how it works section ends  -->
+          </section>
+          <!-- ! how it works section ends  -->
 
           <!-- * testimonial section starts  -->
-          <div class="testimonialContainer py-12">
+          <section class="testimonialContainer py-12">
             <div class="testimonialWrapper w-[85%] m-auto">
-              <h1 class="font-medium pb-3 text-gray-700">TESTIMONIALS</h1>
-              <h1 class="font-semibold text-3xl">What others say about us</h1>
+              <h1
+                class="font-medium pb-2.5 md:pb-4 text-gray-700 text-sm md:text-base"
+              >
+                TESTIMONIALS
+              </h1>
+              <h1 class="font-semibold text-2xl md:text-3xl">
+                What others say about us
+              </h1>
 
               <!-- * testimonial container starts  -->
 
@@ -653,7 +691,7 @@
               </div>
               <!-- * testimonial container ends  -->
             </div>
-          </div>
+          </section>
           <!-- * testimonial section ends  -->
 
           <!-- * footer starts  -->
