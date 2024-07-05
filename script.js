@@ -1,8 +1,11 @@
+let menuIcon = document.getElementById("menuIcon");
+let menuList = document.getElementById("menuList");
+
+// ! initially set menu item hidden
+menuList.style.display = "none";
+
 // ! for changing menu icon
 function toggleMenuIcon() {
-  let menuIcon = document.getElementById("menuIcon");
-  let menuList = document.getElementById("menuList");
-
   if (menuIcon.src.includes("menuOpen.png")) {
     menuIcon.src = "./images/icon/menuClose.png";
     menuList.style.display = "block";
