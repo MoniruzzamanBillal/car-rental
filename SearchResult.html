@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Result</title>
+
+    <!-- tailwind css file  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="searchResultContainer bg-violet-300">
+      <div
+        class="searchResultWrapper bg-sky-400 w-[96%] sm:w-[92%] md:w-[90%] m-auto"
+      >
+        <!--! search field form section starts  -->
+        <section class="searchFormaSection bg-orange-400 py-8">
+          <!-- * search box starts  -->
+          <div
+            class="searchBox w-[99%] md:w-[81%] lg:w-[60%] m-auto bg-gray-100 py-5 px-8 rounded-md shadow-md"
+          >
+            <!-- heading  -->
+            <h1
+              class="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-7 md:mb-12 text-center"
+            >
+              Discover new rental car deals
+            </h1>
+
+            <!-- * form starts  -->
+
+            <div
+              class="formContainer grid grid-col-1 sm:grid-cols-2 gap-y-5 sm:gap-y-9"
+            >
+              <!-- car category input starts  -->
+              <div
+                class="carCategory m-auto inline-flex items-center gap-x-1.5"
+              >
+                <label for="category" class="block font-medium text-gray-900"
+                  >Category :
+                </label>
+                <select
+                  id="category"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm outline-none rounded focus:ring-blue-500 focus:border-blue-500 py-1 px-2"
+                >
+                  <option selected>Choose a category</option>
+
+                  <option value="category 1">category 1</option>
+                  <option value="category 2">category 2</option>
+                  <option value="category 3">category 3</option>
+                  <option value="category 4">category 4</option>
+                </select>
+              </div>
+              <!-- car category input ends  -->
+
+              <!-- charge type category starts  -->
+              <div
+                class="chargeCategory m-auto inline-flex items-center gap-x-1.5"
+              >
+                <label
+                  for="charge"
+                  class="block text-sm font-medium text-gray-900"
+                  >Charge by :
+                </label>
+                <select
+                  id="charge"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm outline-none rounded focus:ring-blue-500 focus:border-blue-500 py-1 px-2"
+                >
+                  <option selected>Charge by hour/day</option>
+
+                  <option value="hour">hour</option>
+                  <option value="day">day</option>
+                </select>
+              </div>
+              <!-- charge type category ends  -->
+
+              <!-- driver type input starts  -->
+              <div
+                class="driverCategory m-auto inline-flex items-center gap-x-1.5"
+              >
+                <label
+                  for="driverSelect"
+                  class="block text-sm font-medium text-gray-900"
+                  >Driven by :
+                </label>
+                <select
+                  id="driverSelect"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm outline-none rounded focus:ring-blue-500 focus:border-blue-500 py-1 px-2"
+                >
+                  <option selected>Choose an option</option>
+                  <option value="with_driver">With driver</option>
+                  <option value="self_drive">Self-drive</option>
+                </select>
+              </div>
+              <!-- driver type input ends -->
+
+              <!--  -->
+            </div>
+
+            <!-- * form ends  -->
+
+            <!--* search button starts  -->
+            <div class="searchBtn mt-8 text-center">
+              <button
+                class="buttonCss bg-sky-500 text-gray-50 hover:bg-sky-600 active:scale-95 shadow"
+              >
+                Search
+              </button>
+            </div>
+            <!--* search button ends  -->
+          </div>
+          <!-- * search box ends  -->
+        </section>
+        <!--! search field form section ends  -->
+
+        <!--! search result body starts  -->
+        <section class="resultBody bg-pink-500 flex justify-between gap-x-3">
+          <!-- * filter section starts  -->
+          <section class="filterSection bg-red-400 w-[25%]">
+            <!-- heading  -->
+            <h1 class="text-4xl font-semibold mb-4">Filtered By :</h1>
+
+            <!-- *  rental type filter starts  -->
+            <div class="rentalType">
+              <h1 class="text-2xl font-semibold">Rental type :</h1>
+
+              <div class="rentalType">
+                <!-- *  any rent type  -->
+                <p class="anyType bg-sky-500">Any</p>
+
+                <!--  -->
+              </div>
+            </div>
+            <!-- *  rental type filter ends  -->
+          </section>
+          <!-- * filter section ends  -->
+
+          <!-- * result section starts  -->
+
+          <section class="resultSection bg-sky-400 w-[30%]">
+            <h1>result section</h1>
+            <h1>result section</h1>
+            <h1>result section</h1>
+            <h1>result section</h1>
+            <h1>result section</h1>
+          </section>
+
+          <!-- * result section ends  -->
+
+          <!-- * detail section starts  -->
+          <section class="detailSection bg-lime-400 w-[45%]">
+            <h1>detail section</h1>
+            <h1>detail section</h1>
+            <h1>detail section</h1>
+            <h1>detail section</h1>
+            <h1>detail section</h1>
+          </section>
+          <!-- * detail section ends  -->
+
+          <!--  -->
+        </section>
+        <!--! search result body ends   -->
+
+        <!--  -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
