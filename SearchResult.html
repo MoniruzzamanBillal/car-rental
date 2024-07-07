@@ -11,15 +11,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="searchResultContainer bg-violet-300">
-      <div
-        class="searchResultWrapper bg-sky-400 w-[96%] sm:w-[92%] md:w-[90%] m-auto"
-      >
+    <div class="searchResultContainer">
+      <div class="searchResultWrapper w-[96%] sm:w-[92%] md:w-[90%] m-auto">
         <!--! search field form section starts  -->
-        <section class="searchFormaSection bg-orange-400 py-8">
+        <section class="searchFormaSection py-8">
           <!-- * search box starts  -->
           <div
-            class="searchBox w-[99%] md:w-[81%] lg:w-[60%] m-auto bg-gray-100 py-5 px-8 rounded-md shadow-md"
+            class="searchBox w-[99%] md:w-[81%] lg:w-[60%] m-auto bg-gray-300 py-5 px-8 rounded-md shadow-lg"
           >
             <!-- heading  -->
             <h1
@@ -115,30 +113,202 @@
         <!--! search field form section ends  -->
 
         <!--! search result body starts  -->
-        <section class="resultBody bg-pink-500 flex justify-between gap-x-3">
-          <!-- * filter section starts  -->
-          <section class="filterSection bg-red-400 w-[25%]">
+        <section class="resultBody flex justify-between gap-x-3">
+          <!-- ! filter section starts  -->
+          <section
+            class="filterSection w-[20%] rounded-md flex flex-col gap-y-6"
+          >
             <!-- heading  -->
-            <h1 class="text-4xl font-semibold mb-4">Filtered By :</h1>
+            <h1 class="text-3xl font-medium text-gray-700 py-2 px-4">
+              Filtered By :
+            </h1>
 
             <!-- *  rental type filter starts  -->
-            <div class="rentalType">
-              <h1 class="text-2xl font-semibold">Rental type :</h1>
+            <div
+              class="rentalType bg-gray-200 shadow-md rounded border border-gray-300 py-2 px-4"
+            >
+              <h1 class="font-medium mb-3 text-gray-800">Rental type :</h1>
 
-              <div class="rentalType">
+              <div
+                class="rentalType flex justify-between items-center flex-wrap gap-y-4"
+              >
                 <!-- *  any rent type  -->
-                <p class="anyType bg-sky-500">Any</p>
+                <p
+                  class="anyType bg-sky-600 hover:bg-sky-700 inline py-1.5 px-3.5 rounded-md font-medium text-gray-100 cursor-pointer"
+                >
+                  Any
+                </p>
+
+                <!-- *  per day rent type  -->
+                <p
+                  class="dayType bg-sky-600 hover:bg-sky-700 inline py-1.5 px-3.5 rounded-md font-medium text-gray-100 cursor-pointer"
+                >
+                  Per day
+                </p>
+
+                <!-- *  per hour rent type  -->
+                <p
+                  class="hourType bg-sky-600 hover:bg-sky-700 inline py-1.5 px-3.5 rounded-md font-medium text-gray-100 cursor-pointer"
+                >
+                  Per hour
+                </p>
 
                 <!--  -->
               </div>
             </div>
             <!-- *  rental type filter ends  -->
+
+            <!-- * price range type starts  -->
+            <div
+              class="priceRange bg-gray-200 shadow-md rounded border border-gray-300 py-2 px-4"
+            >
+              <h1 class="font-medium mb-2 text-gray-800">Price Range :</h1>
+
+              <div class="priceRangeInput">
+                <input
+                  id="steps-range"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="0"
+                  step="0.5"
+                  class="w-full h-2 accent-red-500 rounded-lg cursor-pointer"
+                />
+
+                <!-- price labal  -->
+                <div
+                  class="priceLabel mt-2 text-lg font-medium text-gray-800 flex justify-between"
+                >
+                  <span>0</span>
+                  <span>100</span>
+                </div>
+              </div>
+
+              <!--  -->
+            </div>
+            <!-- * price range type ends  -->
+
+            <!-- * car type input starts  -->
+            <div
+              class="carTypeInput bg-gray-200 shadow-md rounded border border-gray-300 py-2 px-4"
+            >
+              <h1 class="font-medium mb-2 text-gray-800">Car Type :</h1>
+              <ul class="text-sm font-medium text-gray-800">
+                <!-- sedan type  -->
+                <li class="w-full border-b border-gray-300">
+                  <div class="flex items-center ps-3">
+                    <input
+                      id="list-sedan"
+                      type="radio"
+                      value=""
+                      name="list-radio"
+                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                    />
+                    <label
+                      for="list-sedan"
+                      class="w-full py-3 ms-2 text-sm font-medium text-gray-900"
+                      >Sedan
+                    </label>
+                  </div>
+                </li>
+
+                <!-- Wagon type  -->
+                <li class="w-full border-b border-gray-300">
+                  <div class="flex items-center ps-3">
+                    <input
+                      id="list-Wagon"
+                      type="radio"
+                      value=""
+                      name="list-radio"
+                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                    />
+                    <label
+                      for="list-Wagon"
+                      class="w-full py-3 ms-2 text-sm font-medium text-gray-900"
+                      >Wagon
+                    </label>
+                  </div>
+                </li>
+
+                <!-- Van type  -->
+                <li class="w-full border-b border-gray-300">
+                  <div class="flex items-center ps-3">
+                    <input
+                      id="list-Van"
+                      type="radio"
+                      value=""
+                      name="list-radio"
+                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                    />
+                    <label
+                      for="list-Van"
+                      class="w-full py-3 ms-2 text-sm font-medium text-gray-900"
+                      >Van
+                    </label>
+                  </div>
+                </li>
+
+                <!--  -->
+              </ul>
+            </div>
+            <!-- * car type input ends  -->
+
+            <!-- * driven by input section starts  -->
+            <div
+              class="drivenByInput bg-gray-200 shadow-md rounded border border-gray-300 py-2 px-4"
+            >
+              <h1 class="font-medium mb-2 text-gray-800">Driven by :</h1>
+              <ul class="text-sm font-medium text-gray-800">
+                <!-- driver type  -->
+                <li class="w-full border-b border-gray-300">
+                  <div class="flex items-center ps-3">
+                    <input
+                      id="list-driver"
+                      type="radio"
+                      value=""
+                      name="list-radio"
+                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                    />
+                    <label
+                      for="list-driver"
+                      class="w-full py-3 ms-2 text-sm font-medium text-gray-900"
+                    >
+                      With driver
+                    </label>
+                  </div>
+                </li>
+
+                <!-- self Drive type  -->
+                <li class="w-full border-b border-gray-300">
+                  <div class="flex items-center ps-3">
+                    <input
+                      id="list-selfDrive"
+                      type="radio"
+                      value=""
+                      name="list-radio"
+                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                    />
+                    <label
+                      for="list-selfDrive"
+                      class="w-full py-3 ms-2 text-sm font-medium text-gray-900"
+                    >
+                      Self Drive
+                    </label>
+                  </div>
+                </li>
+
+                <!--  -->
+              </ul>
+            </div>
+            <!-- * driven by input section ends   -->
+
+            <!--  -->
           </section>
-          <!-- * filter section ends  -->
+          <!-- ! filter section ends  -->
 
           <!-- * result section starts  -->
 
-          <section class="resultSection bg-sky-400 w-[30%]">
+          <section class="resultSection bg-sky-400 w-[35%]">
             <h1>result section</h1>
             <h1>result section</h1>
             <h1>result section</h1>
