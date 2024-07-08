@@ -144,41 +144,122 @@
         </section>
         <!--! nav section ends  -->
 
-        <!-- !  detail body starts  -->
-        <section
-          class="carDetailSectin py-4 w-[88%] sm:w-[70%] md:w-[50%] lg:w-[35%] m-auto"
+        <div
+          class="detailContainer w-[94%] lg:w-[90%] m-auto flex justify-between gap-x-4 py-5"
         >
-          <!-- * car image sectin starts -->
+          <!--* left sectin starts  -->
 
-          <div class="carImageSection m-auto">
-            <!-- car image  -->
-            <div class="carImg">
-              <img src="./images/car/car1.png" class="w-full h-full" alt="" />
+          <!-- !  detail body starts  -->
+          <section class="carDetailSectinLeft py-4 w-[65%] m-auto">
+            <!-- * car image sectin starts -->
+
+            <div class="carImageSection m-auto">
+              <!-- car image  -->
+              <div
+                class="carImg w-[96%] sm:w-[90%] md:w-[85%] lg:w-[80%] m-auto"
+              >
+                <img src="./images/car/car3.jpg" class="w-full h-full" alt="" />
+              </div>
+
+              <h1 class="text-2xl md:text-3xl font-medium text-gray-800 mt-6">
+                Ford mustang
+              </h1>
             </div>
+            <!-- * car image sectin ends    -->
 
-            <h1 class="text-2xl md:text-3xl font-medium text-gray-800 mt-6">
-              Ford mustang
-            </h1>
-          </div>
-          <!-- * car image sectin ends    -->
+            <!-- *  car detail section starts  -->
+            <div class="carDetail mt-6 flex flex-col gap-y-2">
+              <!-- vehical name -->
+              <h1>
+                <span class="font-medium">Vehicle name:</span> Toyota Allion
+              </h1>
 
-          <!-- *  car detail section starts  -->
-          <div class="carDetail bg-red-400 mt-6 flex flex-col gap-y-2">
-            <!-- vehical name -->
-            <h1>
-              <span class="font-medium">Vehicle name:</span> Toyota Allion
-            </h1>
+              <!-- model  -->
+              <h1><span class="font-medium">Modal:</span> 2007 To 2017</h1>
 
-            <!-- model  -->
-            <h1><span class="font-medium">Modal:</span> 2007 To 2017</h1>
+              <!-- ac  -->
+              <h1><span class="font-medium">Air conditionar:</span> Yes</h1>
+
+              <!-- passenger  -->
+              <h1>
+                <span class="font-medium">Number of passengers:</span> 4+1=5
+              </h1>
+
+              <!-- luggage capacity   -->
+              <h1><span class="font-medium">Luggage capacity:</span> 20 kg</h1>
+
+              <!-- car condition  -->
+              <h1>
+                <span class="font-medium">Condition:</span> Fully Fresh, Super
+                Cool AC.
+              </h1>
+
+              <!-- fuel type  -->
+              <h1><span class="font-medium">Fuel Type:</span> Petrol/CNG</h1>
+
+              <!-- fuel cost  -->
+              <h1>
+                <span class="font-medium">Fuel Cost: </span> The cost will be
+                paid by the client, Gas per km 07/= and Octen per km 20/=
+              </h1>
+
+              <!--  -->
+            </div>
+            <!-- *  car detail section ends   -->
+
+            <!--  -->
+          </section>
+          <!-- !  detail body ends -->
+          <!--* left sectin ends  -->
+
+          <!-- * right section starts  -->
+          <div class="contentRight w-[35%] mt-[3rem]">
+            <!-- heading  -->
+            <h1 class="text-2xl text-gray-700 font-medium mb-4">summary</h1>
+
+            <!--* payment summary section  -->
+            <div
+              class="paymentSummary bg-gray-200 rounded shadow text-lg px-4 py-6"
+            >
+              <!-- rental  cost  -->
+              <div class="rentalCost flex justify-between items-center">
+                <p>Cost of rental</p>
+                <p class="text-gray-800 font-medium">$ 113.73</p>
+              </div>
+
+              <!-- driver cost  -->
+              <div class="driverCost flex justify-between items-center">
+                <p class="text-green-600">+Driver</p>
+                <p class="text-gray-800 font-medium">$ 11</p>
+              </div>
+
+              <!-- total cost calculation section  -->
+              <div
+                class="totalCost flex justify-between items-center border-y border-gray-400 mt-4 py-2"
+              >
+                <p class="font-medium">Sub-total</p>
+                <p class="text-gray-800 font-medium">$ 121</p>
+              </div>
+
+              <!-- *  book button starts  -->
+              <div class="bookBtn text-center mt-7">
+                <button
+                  class="py-2 px-5 rounded-md bg-green-600 hover:bg-green-700 text-gray-50 font-medium"
+                >
+                  Book now
+                </button>
+              </div>
+              <!-- *  book button ends  -->
+
+              <!--  -->
+            </div>
 
             <!--  -->
           </div>
-          <!-- *  car detail section ends   -->
+          <!-- * right section ends  -->
 
           <!--  -->
-        </section>
-        <!-- !  detail body ends -->
+        </div>
 
         <!--  -->
       </div>
