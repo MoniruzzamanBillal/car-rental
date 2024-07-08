@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car detail</title>
+
+    <!-- ! tailwind css file  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ! main css file  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="carDetailContainer">
+      <div class="carDetailWrapper">
+        <!--! nav section starts  -->
+        <section class="navContainer bg-gray-100">
+          <div
+            class="navWrapper w-[94%] lg:w-[90%] m-auto flex justify-between py-3"
+          >
+            <!--! nav left starts  -->
+            <div
+              class="navLeft flex justify-center items-center self-center gap-x-1.5 lg:gap-x-8"
+            >
+              <!-- logo starts  -->
+              <div class="navLogo">
+                <h1 class="text-2xl sm:text-3xl font-semibold">Car rental</h1>
+              </div>
+              <!-- logo ends  -->
+
+              <!-- ! nav link starts  -->
+              <div class="navLink hidden md:flex">
+                <ul class="font-medium flex text-base lg:text-lg">
+                  <li>
+                    <a
+                      href="#"
+                      class="py-1.5 px-3.5 rounded-2xl hover:bg-gray-300"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="py-1.5 px-3.5 rounded-2xl hover:bg-gray-300"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="py-1.5 px-3.5 rounded-2xl hover:bg-gray-300"
+                      >Contact us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="py-1.5 px-3.5 rounded-2xl hover:bg-gray-300"
+                      >Home</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- nav link ends  -->
+            </div>
+            <!--! nav left ends  -->
+
+            <!-- ! nav right starts  -->
+            <div class="navRight hidden md:flex">
+              <div class="navLink flex">
+                <ul
+                  class="font-medium flex items-center justify-center text-base lg:text-lg text-center"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="py-1.5 px-3.5 rounded-2xl hover:bg-gray-300"
+                      >Help</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="py-1.5 px-3.5 rounded-2xl hover:bg-gray-300"
+                      >Log in
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="py-1.5 px-3.5 rounded-2xl hover:bg-gray-300"
+                      >Sign up
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ! nav right ends  -->
+
+            <!-- ! nav menu for phone starts   -->
+            <div class="navMenuContainer flex md:hidden relative z-[50]">
+              <!--* menu icon starts  -->
+              <div className="menuIcon z-[10]   " onclick="toggleMenuIcon()">
+                <img
+                  id="menuIcon"
+                  src="./images/icon/menuOpen.png"
+                  class="size-[2rem]"
+                  alt=""
+                />
+              </div>
+              <!--* menu icon ends -->
+
+              <!--  -->
+
+              <!-- *  menu list starts  -->
+              <div className=" menuList z-[10]    " id="menuList">
+                <ul
+                  class="z-[10] mobileMenuItem shadow text-center py-2 bg-gray-400 absolute transform -translate-x-1/2 -translate-y-1/2 -right-[5rem] top-[7.5rem] sm:top-[8.2rem] w-[10rem] text-base sm:text-lg"
+                >
+                  <li class="py-1 hover:bg-gray-300 w-full">
+                    <a href="" class="">home</a>
+                  </li>
+                  <li class="py-1 hover:bg-gray-300 w-full">
+                    <a href="">about</a>
+                  </li>
+                  <li class="py-1 hover:bg-gray-300 w-full">
+                    <a href="">contact </a>
+                  </li>
+                  <li class="py-1 hover:bg-gray-300 w-full">
+                    <a href="">Help</a>
+                  </li>
+                  <li class="py-1 hover:bg-gray-300 w-full">
+                    <a href="">Login</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- *  menu list ends  -->
+
+              <!--  -->
+            </div>
+            <!-- ! nav menu for phone ends  -->
+          </div>
+        </section>
+        <!--! nav section ends  -->
+
+        <!-- !  detail body starts  -->
+        <section
+          class="carDetailSectin py-4 w-[88%] sm:w-[70%] md:w-[50%] lg:w-[35%] m-auto"
+        >
+          <!-- * car image sectin starts -->
+
+          <div class="carImageSection m-auto">
+            <!-- car image  -->
+            <div class="carImg">
+              <img src="./images/car/car1.png" class="w-full h-full" alt="" />
+            </div>
+
+            <h1 class="text-2xl md:text-3xl font-medium text-gray-800 mt-6">
+              Ford mustang
+            </h1>
+          </div>
+          <!-- * car image sectin ends    -->
+
+          <!-- *  car detail section starts  -->
+          <div class="carDetail bg-red-400 mt-6 flex flex-col gap-y-2">
+            <!-- vehical name -->
+            <h1>
+              <span class="font-medium">Vehicle name:</span> Toyota Allion
+            </h1>
+
+            <!-- model  -->
+            <h1><span class="font-medium">Modal:</span> 2007 To 2017</h1>
+
+            <!--  -->
+          </div>
+          <!-- *  car detail section ends   -->
+
+          <!--  -->
+        </section>
+        <!-- !  detail body ends -->
+
+        <!--  -->
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
